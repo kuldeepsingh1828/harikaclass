@@ -1,0 +1,5 @@
+HTML and CSS
+IF action on webpage --> Javascript is dynamic language
+
+Manipulation DOM -> Document Object Model
+Event --> EventListener(s)

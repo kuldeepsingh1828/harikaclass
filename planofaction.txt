@@ -1,0 +1,6 @@
+HTML + CSS --> SELF STUDY
+Javascript --> Language of browser
+
+Material UI  -> ENRICH Component based library for React JS
+
+MERN -> MONGO(NOSQL DATABASE) (EXPRESS REACT NODE) * JS

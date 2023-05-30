@@ -1,0 +1,13 @@
+2 ways 
+
+1. In the browser (HTML Support)
+2. Outside browser (Node Js Support)
+
+
+//datatypes
+1. Number (int + float)
+2. String(char + String)
+3. boolean(true/false)
+4. object(array and object)
+5. Undefined (no value assigned)
+6. Null 
