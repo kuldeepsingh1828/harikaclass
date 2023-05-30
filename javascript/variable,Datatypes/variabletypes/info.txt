@@ -1,0 +1,15 @@
+var is global
+var can be redeclared
+var can be reassigned
+
+let is block
+let can NOT be redeclared
+let can be reassigned
+
+const is block
+const can NOT be redeclared
+const can NOT be reassigned
+
+
+LOCAL SCOPE
+var const let declared inside a function treated as LOCAL
