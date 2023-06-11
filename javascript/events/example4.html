@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return submitHandler()">
+        <label for="userid">User ID</label>
+        <input type="text" id="userid">
+        <span id="usererror">Username is Empty</span>
+        <br />
+        <label for="password">User Password</label>
+        <input type="text" id="password">
+        <span id="passworderror">Password is Empty</span>
+        <br />
+        <label for="userid2">User ID</label>
+        <input type="text" id="userid2">
+        <span id="usererror2">Username is Empty</span>
+        <br />
+        <label for="password2">User Password</label>
+        <input type="text" id="password2">
+        <span id="passworderror2">Password is Empty</span>
+        <br />
+        <button>Login Me</button>
+    </form>
+</body>
+<script>
+    function submitHandler() {
+        let userId = document.getElementById('userid').value;
+        let userId2 = document.getElementById('userid2').value;
+        let password = document.getElementById('password').value;
+        let password2 = document.getElementById('password2').value;
+        //loops
+        let elements = document.querySelectorAll('span');
+        let elementsArray = Array.from(elements);
+        elementsArray.forEach(element => {
+            element.style.display = 'none';
+        })
+        if (!userId) {
+            //show span for username
+            document.getElementById('usererror').style.display = 'block';
+        }
+        if (!password) {
+            //show span for password
+            document.getElementById('passworderror').style.display = 'block';
+        }
+        if (!userId2) {
+            //show span for username
+            document.getElementById('usererror2').style.display = 'block';
+        }
+        if (!password2) {
+            //show span for password
+            document.getElementById('passworderror2').style.display = 'block';
+        }
+        if (userId && password && password2 && userId2)
+            return true;
+        return false;
+    }
+</script>
+
+</html>
+
+</html>

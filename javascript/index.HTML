@@ -14,17 +14,17 @@
 
 </html>
 <script>
-    // debugger;
-    // let x;
-    // console.log(x);
-    // x = 20;
-    // debugger;
-    // let xy;
-    // xy = 35;
+    //today - Kuldeep I will submit my assigment tomorrow at 3PM.
 
-    debugger;
-    for (let i = 0; i < 5; i++) {
-        console.log(i);
-    } debugger;
-    console.log(i);
+    // RIGHT NOW ? CONFUSED OR WAITING TILL you submit or time is UP
+    // You submitted before 3 -- KEPT PROMISE
+    // You didn't submitted before 3 -- BROKEN PROMISE
+    console.log("1")
+    fetch('https://fakestoreapi.com/products/1')
+        .then(res => res.json())
+        .then(json => console.log(json))
+        .catch((err) => {
+            console.log(err);
+        });
+    console.log("2")
 </script>

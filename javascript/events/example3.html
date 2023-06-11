@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return submitHandler()">
+        <label for="userid">User ID</label>
+        <input type="text" id="userid">
+        <span id="usererror">Username is Empty</span>
+        <br />
+        <label for="password">User Password</label>
+        <input type="text" id="password">
+        <span id="passworderror">Password is Empty</span>
+        <br />
+        <button>Login Me</button>
+    </form>
+</body>
+<script>
+    function submitHandler() {
+        let userId = document.getElementById('userid').value;
+        let password = document.getElementById('password').value;
+        document.getElementById('usererror').style.display = 'none';
+        document.getElementById('passworderror').style.display = 'none';
+        if (!userId) {
+            //show span for username
+            console.log("first")
+            document.getElementById('usererror').style.display = 'block';
+        }
+        if (!password) {
+            //show span for password
+            console.log("second")
+            document.getElementById('passworderror').style.display = 'block';
+        }
+        if (userId && password)
+            return true;
+        return false;
+    }
+</script>
+
+</html>
+
+</html>
